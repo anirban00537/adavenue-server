@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const BlogSchema = mongoose.Schema({
   title: String,
-  description: String,
+  desc: String,
   image: String,
   createdAt: {
     type: Date,

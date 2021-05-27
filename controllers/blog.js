@@ -14,6 +14,7 @@ exports.createBlogContent = createBlogContent = async (req, res) => {
   const newBlogContent = new BlogModel(Blog);
   try {
     await newBlogContent.save();
+    console.log("success");
     res.status(201).json(newBlogContent);
   } catch (error) {
     res.status(409).send(error.message);

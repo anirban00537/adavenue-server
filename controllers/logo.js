@@ -11,6 +11,7 @@ exports.getlogoContent = getlogoContent = async (req, res) => {
 
 exports.createlogoContent = createlogoContent = async (req, res) => {
   const logo = req.body;
+  console.log(logo);
   const newlogoContent = new logoModel(logo);
   try {
     await newlogoContent.save();
